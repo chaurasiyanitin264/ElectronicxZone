@@ -1,0 +1,143 @@
+/* InsertProduct.css */
+
+.product-form-container {
+  padding: 1.5rem;
+}
+
+.card {
+  border: none;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card-header {
+  border-bottom: none;
+  padding: 1rem 1.5rem;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+/* Image Upload Section */
+.image-upload-container {
+  position: relative;
+  border: 2px dashed #ddd;
+  border-radius: 8px;
+  height: 260px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.image-upload-container:hover {
+  border-color: #0d6efd;
+}
+
+.upload-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 1rem;
+  text-align: center;
+  color: #6c757d;
+}
+
+.upload-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #0d6efd;
+}
+
+.image-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.image-preview-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-preview {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.remove-image-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.remove-image-btn:hover {
+  opacity: 1;
+}
+
+/* Form Controls */
+.form-control, .form-select {
+  padding: 0.65rem 0.85rem;
+  border-radius: 0.4rem;
+  font-size: 0.95rem;
+}
+
+.form-control:focus, .form-select:focus {
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+}
+
+/* Button Styles */
+.btn {
+  padding: 0.5rem 1.25rem;
+  font-weight: 500;
+  border-radius: 0.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+  .product-form-container {
+    padding: 1rem 0.5rem;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .image-upload-container {
+    margin-top: 1rem;
+    height: 200px;
+  }
+}
