@@ -6,7 +6,7 @@ const ViewProducts = () => {
   const [mydata, setMydata] = useState([]);
 
   const loadData = () => {
-    let api = "http://localhost:8000/product/showproduct";
+    let api = "https://electronicxzone.onrender.com/product/showproduct";
     axios.get(api).then((res) => {
       setMydata(res.data);  // Save data to state
       console.log(res.data);
@@ -21,7 +21,7 @@ const ViewProducts = () => {
 
 
  const RemoveProduct = async (id) => {
-        let api = `http://localhost:8000/product/removedelete`;
+        let api = `https://electronicxzone.onrender.com/product/removedelete`;
         try {
             const response = await axios.post(api, { id: id });
             alert("Product Deleted Successfully");

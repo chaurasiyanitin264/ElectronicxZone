@@ -48,7 +48,7 @@ const Checkout = () => {
           });
         }
         try {
-          const verifyURL = "http://localhost:8000/api/payment/verify";
+          const verifyURL = "https://electronicxzone.onrender.com/api/payment/verify";
           const { data } = await axios.post(verifyURL, response);          
         } catch (error) {
           console.log(error);
@@ -72,7 +72,7 @@ const Checkout = () => {
     });
 
     try {
-      const orderURL = "http://localhost:8000/api/payment/orders";
+      const orderURL = "https://electronicxzone.onrender.com/api/payment/orders";
       const { data } = await axios.post(orderURL, { amount: mypro.price });
 
       initPay(data.data);
@@ -80,7 +80,7 @@ const Checkout = () => {
       console.log(error);
     }
 
-    const api = "http://localhost:8000/users/usersave";
+    const api = "https://electronicxzone.onrender.com/users/usersave";
     axios
       .post(api, { ...input, proname: mypro.proname, price: mypro.price })
       .then((res) => {

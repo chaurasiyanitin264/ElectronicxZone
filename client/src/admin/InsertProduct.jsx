@@ -106,7 +106,7 @@ const InsertProduct = () => {
       };
       
       // Save product to backend
-      await axios.post('http://localhost:8000/product/productsave', productData);
+      await axios.post('https://electronicxzone.onrender.com/product/productsave', productData);
       
       // Show success message
       message.success('Product added successfully!');

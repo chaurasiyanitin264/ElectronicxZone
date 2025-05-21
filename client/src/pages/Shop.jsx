@@ -21,7 +21,7 @@ const Shop = () => {
   };
 
   const handleSubmit = () => {
-    let api = "http://localhost:8000/product/shopproduct";
+    let api = "https://electronicxzone.onrender.com/product/shopproduct";
     axios.post(api, input).then((res) => {
       setMydata(res.data);
       console.log(res.data);

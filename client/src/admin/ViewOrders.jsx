@@ -6,7 +6,7 @@ const ViewOrders = () => {
   const [mydata, setMydata] = useState([]);
 
   const loadData = () => {
-    let api = "http://localhost:8000/users/ViewOrders";
+    let api = "https://electronicxzone.onrender.com/users/ViewOrders";
     axios.get(api).then((res) => {
       setMydata(res.data);
       console.log(res.data);

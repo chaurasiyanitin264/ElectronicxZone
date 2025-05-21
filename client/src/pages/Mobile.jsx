@@ -16,7 +16,7 @@ const Mobile = () => {
   
   
     const loadData=()=>{
-      let api = "http://localhost:8000/product/showoneproduct?product=mobile";
+      let api = "https://electronicxzone.onrender.com/product/showoneproduct?product=mobile";
       axios.get(api).then((res)=>{
         setMydata(res.data);
         console.log

@@ -16,7 +16,7 @@ const Search = () => {
   const handleChange = (e) => {
     setMyPro(e.target.value);
     if (e.target.value.length > 2) {
-      let api = `http://localhost:8000/product/searchproduct/?product=${e.target.value}`;
+      let api = `https://electronicxzone.onrender.com/product/searchproduct/?product=${e.target.value}`;
       axios.get(api).then((res) => {
         setMyData(res.data);
         console.log(res.data);
